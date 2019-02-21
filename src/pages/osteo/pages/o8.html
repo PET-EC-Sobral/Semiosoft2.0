@@ -1,0 +1,33 @@
+<style type="text/css">
+
+table{
+  width: 80%;
+  text-align: center;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+</style>
+
+<video-section title="Membros Inferiores"
+				videoLink="https://www.youtube.com/embed/KZbtWYUXOw4">
+	<br />
+	<explanation-text-titled title="Coluna Cervical">
+		<b>Spurling</b>: Compressão na coluna cervical gerando dor similar a referida pelo paciente, com irradiação para o membro acometido
+  	</explanation-text-titled>
+
+  	<table style="width: 100%; text-aling:center; margin-left: auto; margin-right: auto;"border="1" cellspacing="0">
+  		<thead>
+  			<tr>
+  				<td *ngFor="let col of table[0]" [innerHtml]="col">
+  				</td>
+  			</tr>
+  		</thead>
+  		<tr *ngFor="let row of table.slice(1)">
+  			<td *ngFor="let col of row" [innerHtml]="col">
+  			</td>
+  		</tr>
+  	</table>
+</video-section>
